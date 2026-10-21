@@ -1,0 +1,7 @@
+ghidra-ko — unofficial Korean localization starter for Ghidra.
+Original Ghidra software developed at National Security Agency and by contributors.
+See UPSTREAM-NOTICE for the unchanged upstream notice and LICENSE for Apache-2.0.
+Local modifications: Korean display/accessibility labels for four standard buttons,
+patch generator, documentation, and tests. This project is not endorsed by NSA.
+New project contributions are provided under Apache-2.0.
+No complete Ghidra distribution or third-party dependencies are included.

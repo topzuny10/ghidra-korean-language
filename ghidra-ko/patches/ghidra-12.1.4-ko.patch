@@ -1,0 +1,54 @@
+--- a/Ghidra/Framework/Docking/src/main/java/docking/DialogComponentProvider.java
++++ b/Ghidra/Framework/Docking/src/main/java/docking/DialogComponentProvider.java
+@@ -485,10 +485,10 @@
+ 	 * okCallback() will be invoked whenever the "OK" button is pressed.
+ 	 */
+ 	protected void addOKButton() {
+-		okButton = new JButton("OK");
++		okButton = new JButton("확인(K)"); // ghidra-ko: Korean display label
+ 		okButton.setMnemonic('K');
+ 		okButton.setName("OK");
+-		okButton.getAccessibleContext().setAccessibleName("OK");
++		okButton.getAccessibleContext().setAccessibleName("확인");
+ 		okButton.addActionListener(e -> okCallback());
+ 		addButton(okButton);
+ 	}
+@@ -498,10 +498,10 @@
+ 	 * CancelCallback() will be invoked whenever the "Cancel" button is pressed.
+ 	 */
+ 	protected void addCancelButton() {
+-		cancelButton = new JButton("Cancel");
++		cancelButton = new JButton("취소(C)"); // ghidra-ko: Korean display label
+ 		cancelButton.setMnemonic('C');
+ 		cancelButton.setName("Cancel");
+-		cancelButton.getAccessibleContext().setAccessibleName("Cancel");
++		cancelButton.getAccessibleContext().setAccessibleName("취소");
+ 		cancelButton.addActionListener(e -> cancelCallback());
+ 		addButton(cancelButton);
+ 	}
+@@ -511,10 +511,10 @@
+ 	 * dismissCallback() will be invoked whenever the "Dismiss" button is pressed.
+ 	 */
+ 	protected void addDismissButton() {
+-		dismissButton = new JButton("Dismiss");
++		dismissButton = new JButton("닫기(D)"); // ghidra-ko: Korean display label
+ 		dismissButton.setMnemonic('D');
+ 		dismissButton.setName("Dismiss");
+-		dismissButton.getAccessibleContext().setAccessibleName("Dismiss");
++		dismissButton.getAccessibleContext().setAccessibleName("닫기");
+ 		dismissButton.addActionListener(e -> dismissCallback());
+ 		addButton(dismissButton);
+ 	}
+@@ -524,10 +524,10 @@
+ 	 * applyCallback() will be invoked whenever the "Apply" button is pressed.
+ 	 */
+ 	protected void addApplyButton() {
+-		applyButton = new JButton("Apply");
++		applyButton = new JButton("적용(A)"); // ghidra-ko: Korean display label
+ 		applyButton.setMnemonic('A');
+ 		applyButton.setName("Apply");
+-		applyButton.getAccessibleContext().setAccessibleName("Apply");
++		applyButton.getAccessibleContext().setAccessibleName("적용");
+ 		applyButton.addActionListener(e -> applyCallback());
+ 		addButton(applyButton);
+ 	}

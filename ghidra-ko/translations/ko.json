@@ -1,0 +1,41 @@
+{
+  "baseline_version": "12.1.4",
+  "upstream_tag": "Ghidra_12.1.4_build",
+  "upstream_commit": "8b6bbb857accdfa20dc5b2f5dea471178c2e9fbc",
+  "path": "Ghidra/Framework/Docking/src/main/java/docking/DialogComponentProvider.java",
+  "sha256": "384073c848b3b1e13ecb36626d69cbd71ab5903093fb4a0d7c8dd71ccf6b77a6",
+  "replacements": [
+    {
+      "old": "okButton = new JButton(\"OK\");",
+      "new": "okButton = new JButton(\"확인(K)\"); // ghidra-ko: Korean display label"
+    },
+    {
+      "old": "okButton.getAccessibleContext().setAccessibleName(\"OK\");",
+      "new": "okButton.getAccessibleContext().setAccessibleName(\"확인\");"
+    },
+    {
+      "old": "cancelButton = new JButton(\"Cancel\");",
+      "new": "cancelButton = new JButton(\"취소(C)\"); // ghidra-ko: Korean display label"
+    },
+    {
+      "old": "cancelButton.getAccessibleContext().setAccessibleName(\"Cancel\");",
+      "new": "cancelButton.getAccessibleContext().setAccessibleName(\"취소\");"
+    },
+    {
+      "old": "dismissButton = new JButton(\"Dismiss\");",
+      "new": "dismissButton = new JButton(\"닫기(D)\"); // ghidra-ko: Korean display label"
+    },
+    {
+      "old": "dismissButton.getAccessibleContext().setAccessibleName(\"Dismiss\");",
+      "new": "dismissButton.getAccessibleContext().setAccessibleName(\"닫기\");"
+    },
+    {
+      "old": "applyButton = new JButton(\"Apply\");",
+      "new": "applyButton = new JButton(\"적용(A)\"); // ghidra-ko: Korean display label"
+    },
+    {
+      "old": "applyButton.getAccessibleContext().setAccessibleName(\"Apply\");",
+      "new": "applyButton.getAccessibleContext().setAccessibleName(\"적용\");"
+    }
+  ]
+}
